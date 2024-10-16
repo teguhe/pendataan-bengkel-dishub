@@ -1,0 +1,32 @@
+unit UPeralatan;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls;
+
+type
+  Tf_peralatan = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Bevel1: TBevel;
+    Label3: TLabel;
+    a1: TLabeledEdit;
+    a2: TLabeledEdit;
+    a3: TComboBox;
+    BitBtn1: TBitBtn;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  f_peralatan: Tf_peralatan;
+
+implementation
+
+{$R *.dfm}
+
+end.

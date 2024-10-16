@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/04/26 14:24:51.000.110,=D:\My Document\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/05/22 20:58:56.000.960,=D:\My Document\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/05/22 20:59:26.000.878,D:\My Document\Embarcadero\Studio\Projects\Unit1.dfm=D:\My Document\Embarcadero\Studio\Projects\desk1\UMain.dfm</Transaction>
+    <Transaction>2015/05/22 20:59:26.000.878,D:\My Document\Embarcadero\Studio\Projects\Unit1.pas=D:\My Document\Embarcadero\Studio\Projects\desk1\UMain.pas</Transaction>
+    <Transaction>2015/05/22 20:59:37.000.564,D:\My Document\Embarcadero\Studio\Projects\Project1.dproj=D:\My Document\Embarcadero\Studio\Projects\desk1\desk1.dproj</Transaction>
+    <Transaction>2015/05/22 21:00:14.000.811,=D:\My Document\Embarcadero\Studio\Projects\desk1\Unit1.pas</Transaction>
+    <Transaction>2015/05/22 21:00:28.000.278,D:\My Document\Embarcadero\Studio\Projects\desk1\Unit1.pas=D:\My Document\Embarcadero\Studio\Projects\desk1\UDM.pas</Transaction>
+    <Transaction>2015/05/22 21:00:28.000.278,D:\My Document\Embarcadero\Studio\Projects\desk1\Unit1.dfm=D:\My Document\Embarcadero\Studio\Projects\desk1\UDM.dfm</Transaction>
+    <Transaction>2015/05/23 08:06:34.000.370,=C:\desk1\Unit1.pas</Transaction>
+    <Transaction>2015/05/23 08:06:50.000.778,C:\desk1\Unit1.pas=C:\desk1\UBengkel.pas</Transaction>
+    <Transaction>2015/05/23 08:06:50.000.778,C:\desk1\Unit1.dfm=C:\desk1\UBengkel.dfm</Transaction>
+    <Transaction>2015/05/23 19:01:59.000.330,=C:\desk1\Unit1.pas</Transaction>
+    <Transaction>2015/05/23 19:02:34.000.038,C:\desk1\UTambahData.pas=C:\desk1\Unit1.pas</Transaction>
+    <Transaction>2015/05/23 19:02:34.000.038,C:\desk1\UTambahData.dfm=C:\desk1\Unit1.dfm</Transaction>
+    <Transaction>2015/05/26 08:41:48.000.675,=C:\desk1\Unit1.pas</Transaction>
+    <Transaction>2015/05/26 08:42:12.000.943,C:\desk1\UFasilitas.pas=C:\desk1\Unit1.pas</Transaction>
+    <Transaction>2015/05/26 08:42:12.000.943,C:\desk1\UFasilitas.dfm=C:\desk1\Unit1.dfm</Transaction>
+    <Transaction>2015/05/26 09:58:30.000.900,=C:\desk1\Unit1.pas</Transaction>
+    <Transaction>2015/05/26 09:58:56.000.069,C:\desk1\UAbout.dfm=C:\desk1\Unit1.dfm</Transaction>
+    <Transaction>2015/05/26 09:58:56.000.069,C:\desk1\UAbout.pas=C:\desk1\Unit1.pas</Transaction>
+    <Transaction>2015/05/26 12:22:27.000.432,=C:\desk1\Unit1.pas</Transaction>
+    <Transaction>2015/05/26 12:22:40.000.609,C:\desk1\UIjin.pas=C:\desk1\Unit1.pas</Transaction>
+    <Transaction>2015/05/26 12:22:40.000.609,C:\desk1\UIjin.dfm=C:\desk1\Unit1.dfm</Transaction>
+    <Transaction>2015/05/31 08:58:55.000.522,=D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\Unit1.pas</Transaction>
+    <Transaction>2015/05/31 08:59:12.000.917,D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\Unit1.pas=D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\UCetak.pas</Transaction>
+    <Transaction>2015/05/31 08:59:12.000.917,D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\Unit1.dfm=D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\UCetak.dfm</Transaction>
+    <Transaction>2015/06/17 16:52:20.000.332,=D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\Unit1.pas</Transaction>
+    <Transaction>2015/06/17 16:52:38.000.424,D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\Unit1.pas=D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\UReport.pas</Transaction>
+    <Transaction>2015/06/17 16:52:38.000.424,D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\Unit1.dfm=D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\UReport.dfm</Transaction>
+    <Transaction>2015/06/19 17:28:13.000.043,D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\UReport.pas=</Transaction>
+    <Transaction>2015/06/19 20:24:21.000.773,=D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\Unit1.pas</Transaction>
+    <Transaction>2015/06/19 20:24:33.000.839,D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\Unit1.dfm=D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\UTebagaKerja.dfm</Transaction>
+    <Transaction>2015/06/19 20:24:33.000.839,D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\Unit1.pas=D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\UTebagaKerja.pas</Transaction>
+    <Transaction>2015/06/20 22:06:47.000.409,=D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\Unit1.pas</Transaction>
+    <Transaction>2015/06/20 22:07:09.000.052,D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\Unit1.dfm=D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\UPeralatan.dfm</Transaction>
+    <Transaction>2015/06/20 22:07:09.000.052,D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\Unit1.pas=D:\My Document\GARAPAN DELPHI XE7\SOURCE\desk1\UPeralatan.pas</Transaction>
+  </Transactions>
+</BorlandProject>

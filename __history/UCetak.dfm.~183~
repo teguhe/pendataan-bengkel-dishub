@@ -1,0 +1,1043 @@
+object f_cetak: Tf_cetak
+  Left = 0
+  Top = 0
+  ClientHeight = 446
+  ClientWidth = 793
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  KeyPreview = True
+  OldCreateOrder = False
+  Visible = True
+  WindowState = wsMaximized
+  OnClose = FormClose
+  OnKeyPress = FormKeyPress
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PageControl1: TPageControl
+    AlignWithMargins = True
+    Left = 3
+    Top = 52
+    Width = 257
+    Height = 391
+    ActivePage = TabSheet3
+    Align = alLeft
+    TabOrder = 0
+    TabWidth = 100
+    object TabSheet1: TTabSheet
+      Caption = 'Data Bengkel'
+      object Label1: TLabel
+        Left = 3
+        Top = 16
+        Width = 53
+        Height = 13
+        Caption = 'Kecamatan'
+      end
+      object Label2: TLabel
+        Left = 3
+        Top = 40
+        Width = 64
+        Height = 13
+        Caption = 'Jenis Bengkel'
+      end
+      object Label3: TLabel
+        Left = 3
+        Top = 64
+        Width = 66
+        Height = 13
+        Caption = 'Bentuk Usaha'
+      end
+      object Label4: TLabel
+        Left = 4
+        Top = 86
+        Width = 68
+        Height = 13
+        Caption = 'Jenis Layanan'
+      end
+      object c1: TComboBox
+        Left = 80
+        Top = 13
+        Width = 145
+        Height = 21
+        ItemIndex = 4
+        TabOrder = 0
+        Text = 'Semua'
+        Items.Strings = (
+          'Sidorejo'
+          'Sidomukti'
+          'Argomulyo'
+          'Tingkir'
+          'Semua')
+      end
+      object c2: TComboBox
+        Left = 80
+        Top = 37
+        Width = 145
+        Height = 21
+        ItemIndex = 2
+        TabOrder = 1
+        Text = 'Semua'
+        Items.Strings = (
+          'Mobil'
+          'Motor'
+          'Semua')
+      end
+      object c3: TComboBox
+        Left = 80
+        Top = 61
+        Width = 145
+        Height = 21
+        ItemIndex = 5
+        TabOrder = 2
+        Text = 'Semua'
+        Items.Strings = (
+          'PT'
+          'CV'
+          'PO'
+          'PD'
+          'KOPERASI'
+          'Semua')
+      end
+      object c4: TCheckListBox
+        Left = 80
+        Top = 85
+        Width = 104
+        Height = 76
+        ItemHeight = 13
+        Items.Strings = (
+          'Perbaikan'
+          'Perawatan'
+          'Variasi'
+          'Sparepart')
+        TabOrder = 3
+      end
+      object Button3: TButton
+        Left = 3
+        Top = 175
+        Width = 240
+        Height = 50
+        Caption = 'Tampilkan Data'
+        TabOrder = 4
+        OnClick = Button3Click
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Perizinan'
+      ImageIndex = 2
+      object rg1: TRadioGroup
+        Left = 0
+        Top = 0
+        Width = 249
+        Height = 201
+        Align = alTop
+        Caption = '[ Pilih kategori ]'
+        ItemIndex = 0
+        Items.Strings = (
+          'Izin Usaha - Ada'
+          'Izin Usaha - Ada tapi Habis'
+          'Izin Usaha - Tidak Ada'
+          'Izin Usaha - Habis/Tidak ada'
+          'HO - Ada'
+          'HO - Ada tapi habis'
+          'HO - Tidak ada'
+          'HO - Habis/Tidak ada'
+          'Tampilkan semua bengkel')
+        TabOrder = 0
+      end
+      object Button4: TButton
+        Left = 0
+        Top = 201
+        Width = 249
+        Height = 40
+        Align = alTop
+        Caption = 'Tampilkan Data'
+        TabOrder = 1
+        OnClick = Button4Click
+        ExplicitLeft = 4
+        ExplicitTop = 207
+      end
+    end
+  end
+  object PageControl2: TPageControl
+    AlignWithMargins = True
+    Left = 266
+    Top = 52
+    Width = 524
+    Height = 391
+    ActivePage = Data
+    Align = alClient
+    TabOrder = 1
+    TabWidth = 100
+    object Data: TTabSheet
+      Caption = 'Data'
+      object DBGrid1: TDBGrid
+        Left = 0
+        Top = 0
+        Width = 516
+        Height = 322
+        Align = alClient
+        DataSource = dm.dct
+        TabOrder = 0
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+        TitleFont.Style = []
+        Columns = <
+          item
+            Expanded = False
+            FieldName = 'nama'
+            Title.Alignment = taCenter
+            Title.Caption = 'NAMA'
+            Title.Font.Charset = DEFAULT_CHARSET
+            Title.Font.Color = clWindowText
+            Title.Font.Height = -11
+            Title.Font.Name = 'Tahoma'
+            Title.Font.Style = [fsBold]
+            Width = 145
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'alamat'
+            Title.Alignment = taCenter
+            Title.Caption = 'ALAMAT'
+            Title.Font.Charset = DEFAULT_CHARSET
+            Title.Font.Color = clWindowText
+            Title.Font.Height = -11
+            Title.Font.Name = 'Tahoma'
+            Title.Font.Style = [fsBold]
+            Width = 196
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'tk_kecamatan'
+            Title.Alignment = taCenter
+            Title.Caption = 'KECAMATAN'
+            Title.Font.Charset = DEFAULT_CHARSET
+            Title.Font.Color = clWindowText
+            Title.Font.Height = -11
+            Title.Font.Name = 'Tahoma'
+            Title.Font.Style = [fsBold]
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'tk_jns_layanan'
+            Title.Alignment = taCenter
+            Title.Caption = 'JENIS LAYANAN'
+            Title.Font.Charset = DEFAULT_CHARSET
+            Title.Font.Color = clWindowText
+            Title.Font.Height = -11
+            Title.Font.Name = 'Tahoma'
+            Title.Font.Style = [fsBold]
+            Visible = True
+          end
+          item
+            Alignment = taCenter
+            Expanded = False
+            FieldName = 'IU_max'
+            Title.Alignment = taCenter
+            Title.Caption = 'Exp Izin Usaha'
+            Title.Font.Charset = DEFAULT_CHARSET
+            Title.Font.Color = clWindowText
+            Title.Font.Height = -11
+            Title.Font.Name = 'Tahoma'
+            Title.Font.Style = [fsBold]
+            Visible = True
+          end
+          item
+            Alignment = taCenter
+            Expanded = False
+            FieldName = 'HO_max'
+            Title.Alignment = taCenter
+            Title.Caption = 'Exp HO'
+            Title.Font.Charset = DEFAULT_CHARSET
+            Title.Font.Color = clWindowText
+            Title.Font.Height = -11
+            Title.Font.Name = 'Tahoma'
+            Title.Font.Style = [fsBold]
+            Visible = True
+          end
+          item
+            Expanded = False
+            Visible = True
+          end>
+      end
+      object Panel1: TPanel
+        Left = 0
+        Top = 322
+        Width = 516
+        Height = 41
+        Align = alBottom
+        BevelOuter = bvNone
+        TabOrder = 1
+        object Button1: TButton
+          Left = 0
+          Top = 0
+          Width = 145
+          Height = 41
+          Align = alLeft
+          Caption = 'Preview Cetak'
+          TabOrder = 0
+          OnClick = Button1Click
+        end
+        object Button2: TButton
+          Left = 145
+          Top = 0
+          Width = 166
+          Height = 41
+          Align = alLeft
+          Caption = 'Preview Map'
+          TabOrder = 1
+          OnClick = Button2Click
+        end
+      end
+    end
+    object TabSheet5: TTabSheet
+      Caption = 'Map'
+      ImageIndex = 1
+      OnShow = TabSheet5Show
+      object WebBrowser1: TWebBrowser
+        Left = 0
+        Top = 0
+        Width = 516
+        Height = 363
+        Align = alClient
+        TabOrder = 0
+        ExplicitLeft = 48
+        ExplicitTop = 40
+        ExplicitWidth = 300
+        ExplicitHeight = 150
+        ControlData = {
+          4C00000055350000842500000000000000000000000000000000000000000000
+          000000004C000000000000000000000001000000E0D057007335CF11AE690800
+          2B2E126208000000000000004C0000000114020000000000C000000000000046
+          8000000000000000000000000000000000000000000000000000000000000000
+          00000000000000000100000000000000000000000000000000000000}
+      end
+    end
+  end
+  object Panel6: TPanel
+    Left = 0
+    Top = 0
+    Width = 793
+    Height = 49
+    Align = alTop
+    TabOrder = 2
+    object Label5: TLabel
+      Left = 8
+      Top = 16
+      Width = 187
+      Height = 19
+      Caption = 'CETAK DATA BENGKEL'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+  end
+  object frxReport1: TfrxReport
+    Version = '5.1.5'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 42155.381128946800000000
+    ReportOptions.LastChange = 42180.626302650500000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    OnGetValue = frxReport1GetValue
+    Left = 468
+    Top = 65535
+    Datasets = <
+      item
+        DataSet = dm.frfas
+        DataSetName = 'frfas'
+      end
+      item
+        DataSet = dm.frij
+        DataSetName = 'frij'
+      end
+      item
+        DataSet = dm.frp
+        DataSetName = 'frp'
+      end
+      item
+        DataSet = dm.frtk
+        DataSetName = 'frtk'
+      end
+      item
+        DataSet = dm.frxct
+        DataSetName = 'frxct'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      Orientation = poLandscape
+      PaperWidth = 297.000000000000000000
+      PaperHeight = 210.000000000000000000
+      PaperSize = 9
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object ReportTitle1: TfrxReportTitle
+        FillType = ftBrush
+        Height = 68.031540000000000000
+        Top = 18.897650000000000000
+        Width = 1046.929810000000000000
+        object Memo1: TfrxMemoView
+          Width = 997.795920000000000000
+          Height = 49.133890000000000000
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -19
+          Font.Name = 'Consolas'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'DAFTAR NAMA BENGKEL')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+      end
+      object MasterData1: TfrxMasterData
+        FillType = ftBrush
+        Height = 124.724490000000000000
+        Top = 204.094620000000000000
+        Width = 1046.929810000000000000
+        DataSet = dm.frxct
+        DataSetName = 'frxct'
+        RowCount = 0
+        object Shape4: TfrxShapeView
+          Left = 850.394250000000000000
+          Width = 147.401670000000000000
+          Height = 124.724490000000000000
+        end
+        object Shape3: TfrxShapeView
+          Left = 702.992580000000000000
+          Width = 147.401670000000000000
+          Height = 124.724490000000000000
+        end
+        object Shape2: TfrxShapeView
+          Left = 555.590910000000000000
+          Width = 147.401670000000000000
+          Height = 124.724490000000000000
+        end
+        object frxctnama: TfrxMemoView
+          Left = 34.015770000000000000
+          Width = 170.078850000000000000
+          Height = 124.724490000000000000
+          DataField = 'nama'
+          DataSet = dm.frxct
+          DataSetName = 'frxct'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          GapX = 5.000000000000000000
+          Memo.UTF8W = (
+            '[frxct."nama"]')
+          ParentFont = False
+        end
+        object Line: TfrxMemoView
+          Width = 34.015770000000000000
+          Height = 124.724490000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[Line#]')
+          ParentFont = False
+        end
+        object frxctalamat: TfrxMemoView
+          Left = 204.094620000000000000
+          Width = 204.094620000000000000
+          Height = 124.724490000000000000
+          DataSet = dm.frxct
+          DataSetName = 'frxct'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          GapX = 5.000000000000000000
+          Memo.UTF8W = (
+            '[frxct."alamat"]'
+            '[frxct."tk_kecamatan"]'
+            '[frxct."kota"]')
+          ParentFont = False
+        end
+        object Subreport1: TfrxSubreport
+          Left = 408.189240000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          Page = frxReport1.Page3
+        end
+        object Subreport2: TfrxSubreport
+          Left = 555.590910000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          Page = frxReport1.Page2
+        end
+        object Subreport3: TfrxSubreport
+          Left = 702.992580000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          Page = frxReport1.Page4
+        end
+        object Subreport4: TfrxSubreport
+          Left = 850.394250000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          Page = frxReport1.Page5
+        end
+        object Shape1: TfrxShapeView
+          Left = 408.189240000000000000
+          Width = 147.401670000000000000
+          Height = 124.724490000000000000
+        end
+      end
+      object ReportSummary1: TfrxReportSummary
+        FillType = ftBrush
+        Height = 22.677180000000000000
+        Top = 389.291590000000000000
+        Width = 1046.929810000000000000
+      end
+      object PageHeader1: TfrxPageHeader
+        FillType = ftBrush
+        Height = 34.015770000000000000
+        Top = 109.606370000000000000
+        Width = 1046.929810000000000000
+        object Memo5: TfrxMemoView
+          Left = 34.015770000000000000
+          Top = 3.779530000000000000
+          Width = 170.078850000000000000
+          Height = 30.236240000000000000
+          DataSet = dm.frxct
+          DataSetName = 'frxct'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          GapX = 5.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Nama Bengkel')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo6: TfrxMemoView
+          Top = 3.779530000000000000
+          Width = 34.015770000000000000
+          Height = 30.236240000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'No.')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo7: TfrxMemoView
+          Left = 204.094620000000000000
+          Top = 3.779530000000000000
+          Width = 204.094620000000000000
+          Height = 30.236240000000000000
+          DataSet = dm.frxct
+          DataSetName = 'frxct'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          GapX = 5.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Alamat')
+          ParentFont = False
+          VAlign = vaCenter
+          Formats = <
+            item
+            end
+            item
+            end
+            item
+            end>
+        end
+        object Memo8: TfrxMemoView
+          Left = 408.189240000000000000
+          Top = 3.779530000000000000
+          Width = 147.401670000000000000
+          Height = 30.236240000000000000
+          DataSet = dm.frxct
+          DataSetName = 'frxct'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          GapX = 5.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Fasilitas')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo9: TfrxMemoView
+          Left = 555.590910000000000000
+          Top = 3.779530000000000000
+          Width = 147.401670000000000000
+          Height = 30.236240000000000000
+          DataSet = dm.frxct
+          DataSetName = 'frxct'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          GapX = 5.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Perizinan')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo10: TfrxMemoView
+          Left = 702.992580000000000000
+          Top = 3.779530000000000000
+          Width = 147.401670000000000000
+          Height = 30.236240000000000000
+          DataSet = dm.frxct
+          DataSetName = 'frxct'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          GapX = 5.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Peralatan')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo11: TfrxMemoView
+          Left = 850.394250000000000000
+          Top = 3.779530000000000000
+          Width = 147.401670000000000000
+          Height = 30.236240000000000000
+          DataSet = dm.frxct
+          DataSetName = 'frxct'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          GapX = 5.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Tenaga Kerja')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+      end
+    end
+    object Page3: TfrxReportPage
+      PaperWidth = 215.900000000000000000
+      PaperHeight = 279.400000000000000000
+      PaperSize = 1
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object MasterData2: TfrxMasterData
+        FillType = ftBrush
+        Height = 15.118120000000000000
+        Top = 18.897650000000000000
+        Width = 740.409927000000000000
+        DataSet = dm.frfas
+        DataSetName = 'frfas'
+        RowCount = 0
+        Stretched = True
+        object frfasfasilitas: TfrxMemoView
+          Width = 15.118120000000000000
+          Height = 15.118120000000000000
+          DataSet = dm.frfas
+          DataSetName = 'frfas'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          GapX = 5.000000000000000000
+          Memo.UTF8W = (
+            '[Line#]. ')
+          ParentFont = False
+          Formats = <
+            item
+            end
+            item
+            end>
+        end
+        object Memo12: TfrxMemoView
+          Left = 15.118120000000000000
+          Width = 132.283464566929000000
+          Height = 15.118120000000000000
+          StretchMode = smActualHeight
+          DataSet = dm.frfas
+          DataSetName = 'frfas'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          GapX = 5.000000000000000000
+          Memo.UTF8W = (
+            '[frfas."fasilitas"]')
+          ParentFont = False
+          Formats = <
+            item
+            end
+            item
+            end>
+        end
+      end
+    end
+    object Page2: TfrxReportPage
+      PaperWidth = 215.900000000000000000
+      PaperHeight = 279.400000000000000000
+      PaperSize = 1
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object MasterData3: TfrxMasterData
+        FillType = ftBrush
+        Height = 15.118120000000000000
+        Top = 18.897650000000000000
+        Width = 740.409927000000000000
+        DataSet = dm.frij
+        DataSetName = 'frij'
+        RowCount = 0
+        Stretched = True
+        object Memo2: TfrxMemoView
+          Left = 15.118120000000000000
+          Width = 132.283464570000000000
+          Height = 15.118120000000000000
+          StretchMode = smActualHeight
+          DataSet = dm.frfas
+          DataSetName = 'frfas'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          GapX = 5.000000000000000000
+          Memo.UTF8W = (
+            '[frij."tk_izin"]')
+          ParentFont = False
+          Formats = <
+            item
+            end
+            item
+            end>
+        end
+        object Memo13: TfrxMemoView
+          Width = 15.118110236220500000
+          Height = 15.118120000000000000
+          DataSet = dm.frfas
+          DataSetName = 'frfas'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          GapX = 5.000000000000000000
+          Memo.UTF8W = (
+            '[Line#]. ')
+          ParentFont = False
+          Formats = <
+            item
+            end
+            item
+            end>
+        end
+      end
+    end
+    object Page4: TfrxReportPage
+      PaperWidth = 215.900000000000000000
+      PaperHeight = 279.400000000000000000
+      PaperSize = 1
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object MasterData4: TfrxMasterData
+        FillType = ftBrush
+        Height = 15.118120000000000000
+        Top = 18.897650000000000000
+        Width = 740.409927000000000000
+        DataSet = dm.frp
+        DataSetName = 'frp'
+        RowCount = 0
+        object Memo3: TfrxMemoView
+          Left = 15.118120000000000000
+          Width = 132.283464570000000000
+          Height = 15.118120000000000000
+          DataSet = dm.frfas
+          DataSetName = 'frfas'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          GapX = 5.000000000000000000
+          Memo.UTF8W = (
+            '[frp."nama"]')
+          ParentFont = False
+          Formats = <
+            item
+            end
+            item
+            end>
+        end
+        object Memo14: TfrxMemoView
+          Width = 15.118120000000000000
+          Height = 15.118120000000000000
+          DataSet = dm.frfas
+          DataSetName = 'frfas'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          GapX = 5.000000000000000000
+          Memo.UTF8W = (
+            '[Line#]. ')
+          ParentFont = False
+          Formats = <
+            item
+            end
+            item
+            end>
+        end
+      end
+    end
+    object Page5: TfrxReportPage
+      PaperWidth = 215.900000000000000000
+      PaperHeight = 279.400000000000000000
+      PaperSize = 1
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object MasterData5: TfrxMasterData
+        FillType = ftBrush
+        Height = 15.118120000000000000
+        Top = 18.897650000000000000
+        Width = 740.409927000000000000
+        DataSet = dm.frtk
+        DataSetName = 'frtk'
+        RowCount = 0
+        object Memo4: TfrxMemoView
+          Left = 15.118120000000000000
+          Width = 132.283464570000000000
+          Height = 15.118120000000000000
+          DataSet = dm.frfas
+          DataSetName = 'frfas'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          GapX = 5.000000000000000000
+          Memo.UTF8W = (
+            '[frtk."nama"]')
+          ParentFont = False
+          Formats = <
+            item
+            end
+            item
+            end>
+        end
+        object Memo15: TfrxMemoView
+          Width = 15.118120000000000000
+          Height = 15.118120000000000000
+          DataSet = dm.frfas
+          DataSetName = 'frfas'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          GapX = 5.000000000000000000
+          Memo.UTF8W = (
+            '[Line#]. ')
+          ParentFont = False
+          Formats = <
+            item
+            end
+            item
+            end>
+        end
+      end
+    end
+  end
+  object GMMap1: TGMMap
+    Language = English
+    Active = False
+    IntervalEvents = 200
+    Precision = 10
+    RequiredProp.Center.Lat = -7.324621800000000000
+    RequiredProp.Center.Lng = 110.504887700000000000
+    RequiredProp.MapType = mtROADMAP
+    RequiredProp.Zoom = 13
+    NonVisualProp.MaxZoom = 0
+    NonVisualProp.MinZoom = 0
+    NonVisualProp.MapMaker = False
+    Layers.Panoramio.Filtered = False
+    Layers.Panoramio.Clickable = True
+    Layers.Panoramio.Show = False
+    Layers.Kml.Clickable = True
+    Layers.Kml.PreserveViewport = False
+    Layers.Kml.ScreenOverlays = True
+    Layers.Kml.SuppressInfoWindows = False
+    Layers.Kml.Show = False
+    Layers.Traffic.Show = False
+    Layers.Transit.Show = False
+    Layers.Bicycling.Show = False
+    Layers.Weather.Show = False
+    Layers.Weather.Clickable = True
+    Layers.Weather.LabelColor = lcBLACK
+    Layers.Weather.SuppressInfoWindows = False
+    Layers.Weather.TemperatureUnit = tuCELSIUS
+    Layers.Weather.WindSpeedUnit = wsKILOMETERS_PER_HOUR
+    StreetView.Visible = False
+    AfterPageLoaded = GMMap1AfterPageLoaded
+    VisualProp.MapTypeCtrl.Position = cpTOP_RIGHT
+    VisualProp.MapTypeCtrl.Style = mtcDEFAULT
+    VisualProp.MapTypeCtrl.Show = True
+    VisualProp.OverviewMapCtrl.Opened = False
+    VisualProp.OverviewMapCtrl.Show = False
+    VisualProp.PanCtrl.Position = cpTOP_LEFT
+    VisualProp.PanCtrl.Show = True
+    VisualProp.RotateCtrl.Position = cpTOP_LEFT
+    VisualProp.RotateCtrl.Show = True
+    VisualProp.ScaleCtrl.Position = cpBOTTOM_LEFT
+    VisualProp.ScaleCtrl.Style = scDEFAULT
+    VisualProp.ScaleCtrl.Show = True
+    VisualProp.StreetViewCtrl.Position = cpTOP_LEFT
+    VisualProp.StreetViewCtrl.Show = True
+    VisualProp.ZoomCtrl.Position = cpTOP_LEFT
+    VisualProp.ZoomCtrl.Style = zcDEFAULT
+    VisualProp.ZoomCtrl.Show = True
+    VisualProp.BGColor = 15659247
+    WebBrowser = WebBrowser1
+    Left = 384
+  end
+  object GMMarker1: TGMMarker
+    Language = English
+    Map = GMMap1
+    AutoUpdate = True
+    VisualObjects = <
+      item
+        Tag = 0
+        Direction = 0
+        MarkerType = mtStandard
+        Animation.OnDrop = False
+        Animation.Bounce = False
+        Clickable = True
+        Draggable = False
+        Flat = False
+        Title = 'TMarker'
+        Visible = True
+        Optimized = True
+        RaiseOnDrag = True
+        CrossOnDrag = True
+        InfoWindow.DisableAutoPan = False
+        InfoWindow.MaxWidth = 0
+        InfoWindow.PixelOffset.Height = 0
+        InfoWindow.PixelOffset.Width = 0
+        InfoWindow.CloseOtherBeforeOpen = True
+        ShowInfoWinMouseOver = False
+        ColoredMarker.Width = 32
+        ColoredMarker.Height = 32
+        ColoredMarker.PrimaryColor = clRed
+        ColoredMarker.StrokeColor = clBlack
+        ColoredMarker.CornerColor = clWhite
+        StyledMarker.StyledIcon = siMarker
+        StyledMarker.ShowStar = False
+        StyledMarker.BackgroundColor = clRed
+        StyledMarker.TextColor = clBlack
+        StyledMarker.StarColor = clLime
+      end
+      item
+        Tag = 0
+        Direction = 0
+        MarkerType = mtStandard
+        Animation.OnDrop = False
+        Animation.Bounce = False
+        Clickable = True
+        Draggable = False
+        Flat = False
+        Title = 'jhcvjhr'
+        Visible = True
+        Optimized = True
+        RaiseOnDrag = True
+        CrossOnDrag = True
+        InfoWindow.DisableAutoPan = False
+        InfoWindow.MaxWidth = 0
+        InfoWindow.PixelOffset.Height = 0
+        InfoWindow.PixelOffset.Width = 0
+        InfoWindow.CloseOtherBeforeOpen = True
+        ShowInfoWinMouseOver = False
+        ColoredMarker.Width = 32
+        ColoredMarker.Height = 32
+        ColoredMarker.PrimaryColor = clRed
+        ColoredMarker.StrokeColor = clBlack
+        ColoredMarker.CornerColor = clWhite
+        StyledMarker.StyledIcon = siMarker
+        StyledMarker.ShowStar = False
+        StyledMarker.BackgroundColor = clRed
+        StyledMarker.TextColor = clBlack
+        StyledMarker.StarColor = clLime
+      end>
+    Left = 416
+  end
+end

@@ -1,0 +1,23 @@
+program desk1;
+
+uses
+  Vcl.Forms,
+  UMain in 'UMain.pas' {f_utama},
+  UDM in 'UDM.pas' {dm: TDataModule},
+  Vcl.Themes,
+  Vcl.Styles,
+  UBengkel in 'UBengkel.pas' {f_bengkel},
+  UTambahData in 'UTambahData.pas' {f_tambahdata};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  TStyleManager.TrySetStyle('Iceberg Classico');
+  Application.Title := 'Aplikasi Pendataan Lokasi Bengkel';
+  Application.CreateForm(Tdm, dm);
+  Application.CreateForm(Tf_utama, f_utama);
+  Application.CreateForm(Tf_tambahdata, f_tambahdata);
+  Application.Run;
+end.
